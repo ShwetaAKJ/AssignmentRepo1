@@ -6,10 +6,24 @@ public class ScannerAssignment {
         System.out.println("Enter a number : ");
         int num= scan.nextInt();
 
-        System.out.println("square of the number is:"+(num*num));
-        System.out.println("cube of this number:"+(num*num*num));
-        System.out.println("fourth power of this number:"+(num*num*num*num));
+        ScannerAssignment sc=new ScannerAssignment();
 
+        System.out.println("square of the number is: "+sc.square(num));
+        System.out.println("cube of this number:"+sc.cube(num));
+        System.out.println("fourth power of this number:"+sc.fourthPow(num));
+    }
 
+    int square(int num)
+    {
+        return num*num;
+    }
+    int cube(int num)
+    {
+        return num*num*num;
+    }
+
+    int fourthPow(int num)
+    {
+        return num*num*num*num;
     }
 }
